@@ -1,0 +1,11 @@
+\c blog_kaitlin_db
+
+DROP TABLE IF EXISTS posts;
+
+CREATE TABLE posts (
+  id SERIAL PRIMARY KEY,
+  tittle TEXT NOT NULL,
+  story TEXT NOT NULL,
+  tag TEXT NOT NULL,
+  time TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+);
