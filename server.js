@@ -15,9 +15,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 // app.use(authController.receiveToken);
 
-if(process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-}
+// if(process.env.NODE_ENV === 'production') {
+//   app.use(express.static('client/build'));
+// }
 
 app.use('/', (req, res) => {
   res.send('Hello Kaitlin');
